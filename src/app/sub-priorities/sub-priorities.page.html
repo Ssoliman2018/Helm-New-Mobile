@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>subPriorities</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let sub of subPrioritiesList" [routerLink]="['/divisions/'+ sub.sub_ID+'/' + sub.priority_ID]"
+      routerLinkActive="router-link-active">
+      <ion-label>{{sub.sub_name}}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
